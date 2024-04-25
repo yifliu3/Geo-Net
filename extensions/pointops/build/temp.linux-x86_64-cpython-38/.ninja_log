@@ -1,0 +1,6 @@
+# ninja log v5
+7	11645	1687931250135923894	/home/yfliu/code/basefull/PointMAEFull/extensions/pointops/build/temp.linux-x86_64-cpython-38/src/sampling/sampling_cuda.o	a5b7ec479fc1cffe
+1	11782	1687931250271923375	/home/yfliu/code/basefull/PointMAEFull/extensions/pointops/build/temp.linux-x86_64-cpython-38/src/knnquery/knnquery_cuda.o	c32ca3fd70fac3f3
+3	32169	1687931270647845531	/home/yfliu/code/basefull/PointMAEFull/extensions/pointops/build/temp.linux-x86_64-cpython-38/src/pointops_api.o	81db443214794bd5
+1	33488	1687931271979840424	/home/yfliu/code/basefull/PointMAEFull/extensions/pointops/build/temp.linux-x86_64-cpython-38/src/knnquery/knnquery_cuda_kernel.o	378b415c097ce7e7
+10	35561	1687931274059832445	/home/yfliu/code/basefull/PointMAEFull/extensions/pointops/build/temp.linux-x86_64-cpython-38/src/sampling/sampling_cuda_kernel.o	637b3bf535028698

@@ -1,0 +1,5 @@
+NAME: TeethSegFinetuneDataset
+DATA_PATH: /home/yfliu/data/3dTeethSeg/
+PC_PATH: /home/yfliu/data/3dTeethSeg/scans
+GT_PATH: /home/yfliu/data/3dTeethSeg/gts
+npoints: 16000

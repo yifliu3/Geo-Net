@@ -1,0 +1,6 @@
+# ninja log v5
+2	9741	1677060285808700856	/home/yfliu/code/MaskPoint/extensions/pointops/build/temp.linux-x86_64-cpython-310/src/sampling/sampling_cuda.o	2c0ef547236eca3f
+0	10628	1677060286700698544	/home/yfliu/code/MaskPoint/extensions/pointops/build/temp.linux-x86_64-cpython-310/src/knnquery/knnquery_cuda.o	98a777e20aa9500d
+2	27683	1677060303732654366	/home/yfliu/code/MaskPoint/extensions/pointops/build/temp.linux-x86_64-cpython-310/src/pointops_api.o	87488d11fa9d1a1e
+0	30009	1677060306084648262	/home/yfliu/code/MaskPoint/extensions/pointops/build/temp.linux-x86_64-cpython-310/src/knnquery/knnquery_cuda_kernel.o	67041622a6c87ad9
+1	32237	1677060308300642510	/home/yfliu/code/MaskPoint/extensions/pointops/build/temp.linux-x86_64-cpython-310/src/sampling/sampling_cuda_kernel.o	f71a8d058a08ce07

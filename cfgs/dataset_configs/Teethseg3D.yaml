@@ -1,0 +1,5 @@
+NAME: TeethSegDataset
+DATA_PATH: data/3dTeethSeg/
+PC_PATH: /data/yfliu/full/scans
+CUR_PATH: /data/yfliu/full/curs
+npoints: 16000

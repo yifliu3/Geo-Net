@@ -1,0 +1,6 @@
+# ninja log v5
+0	9252	1679397374351726445	/home/yfliu/code/base/PointMAECur/extensions/pointops/build/temp.linux-x86_64-cpython-37/src/knnquery/knnquery_cuda.o	80b32ed0643f683a
+2	9348	1679397374451725938	/home/yfliu/code/base/PointMAECur/extensions/pointops/build/temp.linux-x86_64-cpython-37/src/sampling/sampling_cuda.o	b76a5b90bb16dafc
+1	26942	1679397392027636941	/home/yfliu/code/base/PointMAECur/extensions/pointops/build/temp.linux-x86_64-cpython-37/src/pointops_api.o	263d242aca3ab785
+1	27002	1679397392099636576	/home/yfliu/code/base/PointMAECur/extensions/pointops/build/temp.linux-x86_64-cpython-37/src/knnquery/knnquery_cuda_kernel.o	32c3b37bbaa708b6
+2	29187	1679397394295625455	/home/yfliu/code/base/PointMAECur/extensions/pointops/build/temp.linux-x86_64-cpython-37/src/sampling/sampling_cuda_kernel.o	325c7da4cf7f969f

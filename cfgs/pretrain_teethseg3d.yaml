@@ -1,0 +1,65 @@
+optimizer : {
+  type: AdamW,
+  kwargs: {
+  lr : 0.0005, 
+  weight_decay : 0.05
+}}
+
+scheduler: {
+  type: CosLR,
+  kwargs: {
+    epochs: 50,
+    initial_epochs : 3
+}}
+
+dataset : {
+  train : { _base_: cfgs/dataset_configs/Teethseg3D.yaml, 
+            others: {subset: 'pretrain', npoints: 16000, whole: False}},
+  val : { _base_: cfgs/dataset_configs/Teethseg3D.yaml, 
+            others: {subset: 'labeled'}},
+}
+
+model : {
+  NAME: MaskPoint,
+  m: 0.999,
+  T: 0.07,
+  K: 16384,
+  pos_embed_hidden_dim: 128,
+
+  transformer_config: {
+    mask_ratio: 0.9,
+    trans_dim: 384,
+    depth: 12,
+    drop_path_rate: 0.1,
+    cls_dim: 512,
+    num_heads: 4,
+    group_size: "128/256/512", 
+    num_group: 1024, 
+    encoder_dims: 256,
+    gen_dec_depth: 1,
+    gen_queries: 256,
+    dis_dec_depth: 1,
+    use_sigmoid: true,
+    use_moco_loss: false,
+    gen_loss_weight: 1.0,
+    dis_loss_weight: 1.0,
+    moco_loss_weight: 0.01,
+    use_focal_loss: true,
+    focal_loss_alpha: 0.25,
+    focal_loss_gamma: 2,
+    ambiguous_threshold: -1,
+    ambiguous_dynamic_threshold: 256,
+    dec_query_mode: points,
+    dec_query_real_num: 256,
+    dec_query_fake_num: 256,
+    chamfer_type: l1,
+    extract_layers: "4/8/12",
+    cur_weight_ratio: 0.3
+
+  }
+}
+
+total_bs : 2
+step_per_update : 1
+grad_norm_clip : 10
+max_epoch : 50
