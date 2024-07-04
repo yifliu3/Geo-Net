@@ -1,7 +1,15 @@
 # Geo-Net: geometry-guided pre-training for tooth point cloud segmentation
 This repository is an official PyTorch implementation of the paper **"Geo-Net: geometry-guided pre-training for tooth point cloud segmentation"**
 
+## Dataset
+**Pre-training dataset:** 
+You can download it from [onedrive](https://mycuhk-my.sharepoint.com/:f:/g/personal/1155195605_link_cuhk_edu_hk/Ep1NAYTWMJdDhazoy-FggpoBNJozTtO8HVTrmCR8NTJgAw?e=rI9Hik).
+After downloading, please modify the path in `cfgs/dataset_configs/Teethseg3D.yaml`.
+Then, to get curvatures for the pre-training, run `python estim_curvs.py` (about 3 hours). 
 
+**Fine-tuning dataset:**
+Download link: https://osf.io/xctdy/.
+After downloading, please modify the path in `cfgs/dataset_configs/Teethseg3D_finetune.yaml`.
 ## Dependencies
 * Python 3.8.18
 * Torch 1.13.1+cu117
@@ -21,15 +29,6 @@ cd extensions/pointops && python setup.py install && cd ../..
 cd extensions/pointnet2 && python setup.py install && cd ../..
 ```
 
-## Dataset
-**Pre-training dataset:** 
-You can download it from [onedrive](https://mycuhk-my.sharepoint.com/:f:/r/personal/1155195605_link_cuhk_edu_hk/Documents/RawTeeth6000?csf=1&web=1&e=n91jGl).
-After downloading, please modify the path in `cfgs/dataset_configs/Teethseg3D.yaml`.
-Then, to get curvatures for the pre-training, run `python estim_curvs.py` (about 3 hours). 
-
-**Fine-tuning dataset:**
-Download link: https://osf.io/xctdy/.
-After downloading, please modify the path in `cfgs/dataset_configs/Teethseg3D_finetune.yaml`.
 
 ## Pre-training 
 * Pre-train the Geo-Net with the default settings:
