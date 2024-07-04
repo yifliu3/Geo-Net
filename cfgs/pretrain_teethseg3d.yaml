@@ -20,7 +20,7 @@ dataset : {
 }
 
 model : {
-  NAME: MaskPoint,
+  NAME: GeoNet,
   m: 0.999,
   T: 0.07,
   K: 16384,

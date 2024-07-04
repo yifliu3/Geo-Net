@@ -1,2 +1,2 @@
 from .build import build_model_from_cfg
-import models.MaskPoint
+import models.GeoNet
