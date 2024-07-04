@@ -26,6 +26,7 @@ cd extensions/pointnet2 && python setup.py install && cd ../..
 You can download it from [onedrive](https://mycuhk-my.sharepoint.com/:f:/r/personal/1155195605_link_cuhk_edu_hk/Documents/RawTeeth6000?csf=1&web=1&e=n91jGl).
 After downloading, please modify the path in `cfgs/dataset_configs/Teethseg3D.yaml`.
 Then, to get curvatures for the pre-training, run `python estim_curvs.py` (about 3 hours). 
+
 **Fine-tuning dataset:**
 Download link: https://osf.io/xctdy/.
 After downloading, please modify the path in `cfgs/dataset_configs/Teethseg3D_finetune.yaml`.
