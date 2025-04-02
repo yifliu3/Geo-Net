@@ -18,7 +18,7 @@ After downloading, please modify the path in `cfgs/dataset_configs/Teethseg3D_fi
 ## Setup
 ```bash
 git clone https://github.com/yifliu3/Geo-Net.git
-cd Geo-MAE
+cd Geo-Net
 conda create -n geonet python=3.8 -y
 conda activate geonet
 pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
